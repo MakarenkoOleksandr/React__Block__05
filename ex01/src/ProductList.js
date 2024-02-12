@@ -13,8 +13,8 @@ const ProductList = ({ filter, products }) => {
       ) : (
         filteredProducts.map((product) => (
           <li key={product.product}>
-            <strong>Name:</strong> {product.product},<strong>Category:</strong>
-            {product.filter},<strong>Price:</strong> ${product.price}
+            <strong>Name:</strong> {product.product}, <strong>Category:</strong>{" "}
+            {product.category}, <strong>Price:</strong> ${product.price}
           </li>
         ))
       )}
